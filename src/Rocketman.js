@@ -17,7 +17,7 @@ UFO.prototype.step = function() {
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.css('content', "url('http://aliens-extraterrestrial.com/picture_library/ufo.png')");
+    this.$node.css('content', "url('http://hexanode.in/RocketMan.png')");
       // https://media.giphy.com/media/T47kk9ZsHjxWo/giphy.gif')")
     this.$node.css('border', '0px')
     this.$node.css('width', '25%')

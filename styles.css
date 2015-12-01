@@ -4,6 +4,11 @@ body, html{
 body{
   margin: 0px;
   background-image: url('http://www.arcadiastreet.com/cgvistas/images/ceres_surface_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{

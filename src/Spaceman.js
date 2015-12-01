@@ -23,5 +23,5 @@ Spaceman.prototype.step = function() {
 }
 
 Spaceman.prototype.lineUp = function(){
-  this.$node.css('top', '300px');
+    this.setPosition(350, this.left);
 }
