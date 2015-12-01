@@ -19,7 +19,6 @@ GrowingDancer.prototype.step = function() {
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
     
-    this.$node.css('border', this.size+'px solid green');
     this.$node.css('border-radius', this.size+'px');
     if(this.size === 30){
       this.grow = false
@@ -27,8 +26,10 @@ GrowingDancer.prototype.step = function() {
       this.grow = true;
     }
     if(this.grow){
+      this.$node.css('border', this.size+'px solid green');
       this.size++;
     } else {
+      this.$node.css('border', this.size+'px solid yellow');
       this.size--;
     }
   };

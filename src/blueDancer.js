@@ -15,6 +15,7 @@ BlueDancer.prototype.step = function() {
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    this.$node.toggle();
-    this.$node.css('border', '20px solid blue')
+    // this.$node.css('border', '20px solid blue')
+    this.$node.css('content', "url('https://media.giphy.com/media/T1z62QsZNHFWU/giphy.gif')")
+    this.$node.css('border', '0px')
 }

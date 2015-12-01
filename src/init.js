@@ -28,10 +28,11 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer.$node);
   });
 
   $('.lineUp').on('click', function(){
-    $('.dancer').css('top', '100px')
+    $('.dancer').css('top', '400px')
   });
 });
 
