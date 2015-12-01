@@ -4,6 +4,7 @@ var GrowingDancer = function(top, left, timeBetweenSteps) {
   this.size = 10
   this.grow = true
   this.$node.css('border', this.size+'px solid green');
+  this.$node.css('border-radius', '10px');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 };
