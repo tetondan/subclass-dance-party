@@ -33,3 +33,7 @@ GrowingDancer.prototype.step = function() {
       this.size--;
     }
   };
+
+  GrowingDancer.prototype.lineUp = function(){
+  this.$node.css('top', '400px');
+}
