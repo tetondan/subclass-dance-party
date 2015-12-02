@@ -1,7 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $(".addDancerButton").on("click", function(event) {
+  $('body').on("click", ".addDancerButton", function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -21,20 +21,43 @@ $(document).ready(function() {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
     // make a dancer with a random position
+    makeDancer(dancerMakerFunction);
 
-    var dancer = new dancerMakerFunction(
+    // var dancer = new dancerMakerFunction(
+    //   $("body").height() * Math.random(),
+    //   $("body").width() * Math.random(),
+    //   Math.random() * 1000
+    // );
+    // $('body').append(dancer.$node);
+    // window.dancers.push(dancer);
+  });
+
+  var makeDancer = function(dancerType){
+    var dancer = new dancerType(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
-  });
+  };
 
   $('.lineUp').on('click', function(){
     for(var i=0; i<window.dancers.length;i++){
       window.dancers[i].lineUp();
     }
   });
+  $('.start').on('click', function(){
+    $('.start').html('<span class="buggy">Controls:(A:LEFT D:RIGHT W:UP S:DOWN)</span>')
+    makeDancer(Buggy)
+    var amountUFO = Math.random()*4;
+    var amountSpacemen = Math.random()*30;
+    for(var i = 1; i < amountUFO; i++){
+      makeDancer(UFO);
+    }
+    for(var i = 1; i < amountSpacemen; i++){
+      makeDancer(Spaceman);
+    }
+  })
 });
 

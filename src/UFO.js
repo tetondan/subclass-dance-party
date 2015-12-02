@@ -41,8 +41,11 @@ UFO.prototype.step = function() {
         if(window.dancers[i].left > this.left + 140 &&
            window.dancers[i].left < this.left + 180){
           if(window.dancers[i].top > this.top + 50 &&
-           window.dancers[i].top < this.top + 215){
-              window.dancers[i].$node.fadeOut(500);
+             window.dancers[i].top < this.top + 215){
+             window.dancers[i].$node.fadeOut(500);
+            if(window.dancers[i].constructor === Buggy){
+              $('.start').html('<a href="#">Start</a>');
+            }
            } 
         } 
         // call fadout on element it hits
