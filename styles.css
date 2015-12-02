@@ -6,7 +6,7 @@ body{
   background-image: url('http://www.arcadiastreet.com/cgvistas/images/ceres_surface_1280.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   background-size: cover;
   background-color: black;
   font-size: 18px;
@@ -17,6 +17,11 @@ body, a:link, a:visited, a:active{
 .title, .addDancerButton, .lineUp{
   padding:5px 12px;
   float:right;
+}
+
+.score{
+  padding:5px 12px;
+  float:left;
 }
 .topbar{
   height:32px;
