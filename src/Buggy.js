@@ -46,10 +46,10 @@ Buggy.prototype.step = function() {
       //if Buggy is in same width height 
       if(window.dancers[i].constructor !== Buggy &&
          window.dancers[i].constructor !== UFO){
-        if(window.dancers[i].left > this.left + 140 &&
-           window.dancers[i].left < this.left + 180){
-          if(window.dancers[i].top > this.top + 50 &&
-           window.dancers[i].top < this.top + 215){
+        if(window.dancers[i].left > this.left &&
+           window.dancers[i].left < this.left + 200){
+          if(window.dancers[i].top > this.top &&
+           window.dancers[i].top < this.top + 200){
               window.dancers[i].$node.fadeOut(500);
            } 
         } 
