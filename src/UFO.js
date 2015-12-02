@@ -19,10 +19,10 @@ UFO.prototype.step = function() {
     // other effects you can use on a jQuery-wrapped html tag.
     this.$node.css('content', "url('http://aliens-extraterrestrial.com/picture_library/ufo.png')");
       // https://media.giphy.com/media/T47kk9ZsHjxWo/giphy.gif')")
-    this.$node.css('border', '0px')
-    this.$node.css('width', '25%')
-    this.$node.css('height', '25%')
-    this.$node.css('left', this.left+'px')
+    this.$node.css('border', '0px');
+    this.$node.css('width', '25%');
+    this.$node.css('height', '25%');
+    this.$node.css('left', this.left+'px');
 
     if(this.left <= -160){
       this.directionLeft = false
